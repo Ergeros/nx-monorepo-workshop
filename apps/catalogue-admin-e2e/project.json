@@ -1,20 +1,15 @@
 {
   "name": "catalogue-admin-e2e",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/catalogue-admin-e2e/src",
+  "sourceRoot": "apps/catalogue-admin-e2e",
   "projectType": "application",
   "targets": {
     "e2e": {
-      "executor": "@nx/cypress:cypress",
+      "executor": "@ns3/nx-playwright:playwright",
       "options": {
-        "cypressConfig": "apps/catalogue-admin-e2e/cypress.config.ts",
-        "devServerTarget": "catalogue-admin:serve:development",
-        "testingType": "e2e"
-      },
-      "configurations": {
-        "production": {
-          "devServerTarget": "catalogue-admin:serve:production"
-        }
+        "command": "playwright test",
+        "config": "apps/catalogue-admin-e2e/playwright.config.ts",
+        "devServerTarget": "catalogue-admin:serve"
       }
     },
     "lint": {
@@ -25,6 +20,5 @@
       }
     }
   },
-  "tags": [],
-  "implicitDependencies": ["catalogue-admin"]
+  "tags": []
 }

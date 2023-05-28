@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "@mands/nx-playwright": "^0.6.2",
+    "@ns3/nx-playwright": "*",
     "@nx/cypress": "16.2.2",
     "@nx/eslint-plugin": "16.2.2",
     "@nx/jest": "16.2.2",
@@ -21,6 +22,7 @@
     "@nx/react": "16.2.2",
     "@nx/rollup": "16.2.2",
     "@nx/workspace": "16.2.2",
+    "@playwright/test": "^1.32.1",
     "@rollup/plugin-url": "^7.0.0",
     "@svgr/rollup": "^6.1.2",
     "@swc/cli": "~0.1.62",
