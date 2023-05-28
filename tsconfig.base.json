@@ -14,7 +14,22 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nx-monorepo-workshop/catalogue-admin/feature-catalogue": [
+        "libs/catalogue-admin/feature-catalogue/src/index.ts"
+      ],
+      "@nx-monorepo-workshop/catalogue-admin/feature-catalogue/server": [
+        "libs/catalogue-admin/feature-catalogue/src/server.ts"
+      ],
+      "@nx-monorepo-workshop/ivys-admin/feature-movies": [
+        "libs/ivys-admin/feature-movies/src/index.ts"
+      ],
+      "@nx-monorepo-workshop/ivys-admin/feature-movies/server": [
+        "libs/ivys-admin/feature-movies/src/server.ts"
+      ],
+      "@nx-monorepo-workshop/shared/ui": ["libs/shared/ui/src/index.ts"],
+      "@nx-monorepo-workshop/shared/ui/server": ["libs/shared/ui/src/server.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
